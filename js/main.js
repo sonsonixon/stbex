@@ -51,7 +51,7 @@ $(document).ready(function(){
         $("#btn-submit").html('<i class="fa fa-fw fa-spinner fa-spin"></i>');
       },
       success: function(data){
-        $("#btn-submit").html('Send us your feedback');
+        $("#btn-submit").html('Send feedback');
 
         if(data.code === 'error'){
         	$.each(data.errors, function(index, value){
